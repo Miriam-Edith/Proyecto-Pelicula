@@ -1,0 +1,15 @@
+proyecto-peliculas/
+│
+├── public/
+│   ├── css/               (Estilos CSS personalizados)
+│   ├── js/                (Scripts JavaScript del frontend)
+│   ├── img/               (Imágenes y recursos gráficos)
+│   ├── index.html         (Página principal)
+│   ├── detalles.html      (Página para detalles de películas)
+│
+├── node_modules/          (Dependencias de Node.js)
+│
+├── server.js              (Archivo principal del backend)
+├── package.json           (Dependencias del proyecto)
+├── package-lock.json      (Archivo generado por npm)
+├── db.sql                 (Script para inicializar la base de datos)

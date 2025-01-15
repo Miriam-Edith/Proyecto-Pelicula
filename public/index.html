@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DANIMADOS</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-pastel py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a href="#" class="text-decoration-none text-dark">
+                <h1 class="h3 text-decoration">DANIMADOS</h1>
+            </a>
+            <form class="d-flex align-items-center gap-3" id="searchForm">
+                <div class="d-flex align-items-center gap-2">
+                    <a class="btn btn-outline-primary" href="#inicio">Inicio</a>
+                    <div class="dropdown">
+                        <button class="btn btn-outline-primary dropdown-toggle" type="button" id="categoryDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            Categorías
+                        </button>
+                        <ul class="dropdown-menu" id="dynamicCategories" aria-labelledby="categoryDropdown">
+                            <!-- Las categorías se cargarán dinámicamente desde el backend -->
+                        </ul>
+                    </div>
+                </div>
+                <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Buscar" id="searchInput">
+                <button class="btn btn-outline-primary" type="submit">Buscar</button>
+            </form>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container my-4">
+        <!-- Carrusel de contenido destacado -->
+        <div id="featuredCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" aria-label="Carrusel de contenido destacado">
+            <div class="carousel-inner" id="carouselItems" style="max-width: 800px; margin: 0 auto;">
+                <!-- Las películas destacadas se cargarán aquí -->
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#featuredCarousel" data-bs-slide="prev" aria-label="Anterior">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#featuredCarousel" data-bs-slide="next" aria-label="Siguiente">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+        </div>
+
+        <!-- Categorías 
+        <section>
+            <h2 class="my-4 text-pastel">Categorías</h2>
+            <div class="row text-center" id="categoryList">
+                   Las categorías se cargarán aquí -->
+            </div>
+        </section>
+
+        <!-- Listado de películas/series -->
+        <section>
+            <h2 class="my-4 text-pastel">Películas y Series</h2>
+            <div class="row" id="movieList">
+                <!-- Las películas se cargarán aquí -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-light text-dark text-center py-3">
+        <p>&copy; 2025 DIANIMADOS. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
